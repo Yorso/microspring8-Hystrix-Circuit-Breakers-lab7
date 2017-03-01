@@ -8,6 +8,9 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 /*
+ * Turbine is a tool for aggregating streams of Server-Sent Event (SSE) JSON data into a single stream. 
+ * The targeted use case is metrics streams from instances in an SOA being aggregated for dashboards.
+ * 
  * Turbine listens and adds all active Hystrix service streams, interacting with Eureka
  * 
  * Open http://localhost:8020/hystrix. When prompted, enter 
