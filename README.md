@@ -10,7 +10,7 @@
 
 2.  Start the common-config-server and common-eureka-server.  
 
-3.  Lab 7 has copies of the word server and sentence server that have been converted to use Feign, we will adjust them to use Hystrix too.  Start 5 separate copies of the lab-7-word-server, using the profiles "subject", "verb", "article", "adjective", and "noun".  There are several ways to do this, depending on your preference:
+3.  Lab 7 has copies of the word server and sentence server that have been converted to use Feign, we will adjust them to use Hystrix too.  Start 5 separate copies of the microspring8-word-server-hystrix-lab7, using the profiles "subject", "verb", "article", "adjective", and "noun".  There are several ways to do this, depending on your preference:
   - If you wish to use Maven, open separate command prompts in the target directory and run these commands:
     - mvn spring-boot:run -Drun.jvmArguments="-Dspring.profiles.active=subject"
     - mvn spring-boot:run -Drun.jvmArguments="-Dspring.profiles.active=verb"
@@ -27,7 +27,7 @@
 
   **Part 2 - Refactor**
 
-7.  First, take a look at the lab-7-sentence-server project.  It has been refactored a bit from previous examples.  There is now a WordService and WordServiceImpl that wraps calls to the Feign clients.  This was mainly done to make the lab instructions easier, so that your code modifications are within one class.
+7.  First, take a look at the microspring8-sentence-server-hystrix-lab7 project.  It has been refactored a bit from previous examples.  There is now a WordService and WordServiceImpl that wraps calls to the Feign clients.  This was mainly done to make the lab instructions easier, so that your code modifications are within one class.
 
 8.  Open the POM.  Add another dependency for spring-cloud-starter-hystrix.
 
