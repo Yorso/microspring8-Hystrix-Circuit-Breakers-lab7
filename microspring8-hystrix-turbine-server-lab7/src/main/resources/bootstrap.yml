@@ -1,0 +1,4 @@
+---
+spring:
+  application:
+    name: microspring8-hystrix-turbine-server-lab7
