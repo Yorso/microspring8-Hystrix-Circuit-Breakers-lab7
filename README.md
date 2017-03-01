@@ -59,6 +59,8 @@
 
 18.  Start Turbine server. Open [http://localhost:8020/hystrix](http://localhost:8020/hystrix).  When prompted, enter http://localhost:8030/turbine.stream as the host to monitor.  
 
+19.  Refresh [http://localhost:8020/sentence](http://localhost:8020/sentence) several times to generate activity.
+
 ##Info
 
 - [x] **[Microservices with Spring Cloud (Udemy)](https://www.udemy.com/microservices-with-spring-cloud/learn/v4/overview)**
