@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.jorge</groupId>
+	<artifactId>microspring8-sentence-server-hystrix-reactive-lab7</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>microspring8-sentence-server-hystrix-reactive-lab7</name>
+	<description>Example microservice which uses Hystrix to isolate the effect of dependent service failures.  This variant tries to use a Reactive Hystrix command.</description>
+
+	<parent>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-parent</artifactId>
+		<version>Angel.SR6</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<start-class>com.jorge.EurekaDiscoveryClientSentenceApplication</start-class>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+	
+		<!-- Eureka Netflix libraries -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+
+		<!-- This dependency is necessary to use remote application.yml (dependency for spring-cloud-config-client) -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+	
+		<!--  Ribbon client balancer -->
+	 	<dependency>
+	        <groupId>org.springframework.cloud</groupId>
+	        <artifactId>spring-cloud-starter-ribbon</artifactId>
+	    </dependency>
+	    
+	    <!--  Feign declarative REST service client -->
+	    <dependency>
+	        <groupId>org.springframework.cloud</groupId>
+	        <artifactId>spring-cloud-starter-feign</artifactId>
+	    </dependency>
+	    
+	    <!-- Hystrix circuit breakers -->
+	    <dependency>
+	        <groupId>org.springframework.cloud</groupId>
+	        <artifactId>spring-cloud-starter-hystrix</artifactId>
+	    </dependency>
+	    
+	    <!-- Hystrix circuit breakers - monitoring dashboard -->
+	    <dependency>
+	        <groupId>org.springframework.cloud</groupId>
+	        <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+	    </dependency>
+	    
+	    <!-- This is necessary to use Hystrix, among other things -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+		<!-- Making the service calls “reactively” -->
+		<dependency>
+    		<groupId>io.reactivex</groupId>
+    		<artifactId>rxjava</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+	    <dependency>
+			<groupId>org.apache.ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>1.9.3</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.wimpi</groupId>
+			<artifactId>telnetd-x</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
