@@ -2,10 +2,6 @@
   <img src="http://www.gregoriopalama.com/wp-content/uploads/2016/06/cloud.png" alt="Spring Cloud Netflix"/>
 </p>
 
-- [x] **[Microservices with Spring Cloud (Udemy)](https://www.udemy.com/microservices-with-spring-cloud/learn/v4/overview)** :link:
-
-- [x] **Instructor: [Ken Krueger, Technical Instructor in Software Development topics](https://linkedin.com/in/ken-krueger-43670111)** :link:
-
 ##Lab 7 - Using Hystrix Circuit Breakers
 
 **Part 1, Start existing services**
@@ -58,3 +54,8 @@
   **BONUS - Add Asynchronous Behavior**
 
 17.  If you like, you can attempt to increase the performance of our sentence server by making the service calls “reactively”.
+
+##
+- [x] **[Microservices with Spring Cloud (Udemy)](https://www.udemy.com/microservices-with-spring-cloud/learn/v4/overview)** :link:
+
+- [x] **Instructor: [Ken Krueger, Technical Instructor in Software Development topics](https://linkedin.com/in/ken-krueger-43670111)** :link:
