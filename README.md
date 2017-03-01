@@ -55,7 +55,7 @@
 
 17.  If you like, you can attempt to increase the performance of our sentence server by making the service calls “reactively”.
 
-  **BONUS - Add Hystrix Dashboard**
+  **BONUS - Turbine**
 
 18.  Start Turbine server. Open [http://localhost:8020/hystrix](http://localhost:8020/hystrix).  When prompted, enter http://localhost:8030/turbine.stream as the host to monitor.  
 
