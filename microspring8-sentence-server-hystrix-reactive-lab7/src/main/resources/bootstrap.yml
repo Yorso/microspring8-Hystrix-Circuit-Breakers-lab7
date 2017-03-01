@@ -2,9 +2,9 @@
 ---
 spring:
   application:
-    name: microspring7-sentence-server-feign-lab6
+    name: microspring8-sentence-server-hystrix-reactive-lab7
   cloud:
     config:
       uri: http://localhost:8001	# Expect the Spring Cloud Config server to be running on localhost, port 8001.  
 server:
-  port: 8020      # Fix the sentence server to 8020.  This makes it easy to find.
+  port: 8021      # Fix the sentence server to 8021.  This makes it easy to find.
